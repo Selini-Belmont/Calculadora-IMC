@@ -8,7 +8,7 @@ import android.os.Handler
 import android.view.WindowManager
 
 class Launcher : AppCompatActivity() {
-    
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

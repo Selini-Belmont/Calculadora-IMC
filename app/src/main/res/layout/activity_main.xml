@@ -18,26 +18,31 @@
     <TextView
             android:text="Massa"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="217dp"
-            tools:layout_editor_absoluteX="40dp" android:id="@+id/txvMassa"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/txvMassa" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="24dp"
+            tools:layout_editor_absoluteY="221dp"/>
     <SeekBar
             android:layout_width="0dp"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="248dp"
-            android:id="@+id/seekBar"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbMassa"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="24dp"
-            app:layout_constraintHorizontal_bias="0.0"/>
+            app:layout_constraintStart_toStartOf="@+id/txvMassa"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/txvMassa"/>
     <TextView
             android:text="Altura"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="287dp"
-            tools:layout_editor_absoluteX="32dp" android:id="@+id/txvAltura"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/txvAltura" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"
+            tools:layout_editor_absoluteY="282dp"/>
     <SeekBar
             android:layout_width="0dp"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="315dp"
-            android:id="@+id/seekBar2" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="24dp"
-            app:layout_constraintHorizontal_bias="0.0"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/sbAltura" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toStartOf="@+id/txvAltura"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/txvAltura"/>
     <Button
             android:text="Calcular"
             android:layout_width="wrap_content"
