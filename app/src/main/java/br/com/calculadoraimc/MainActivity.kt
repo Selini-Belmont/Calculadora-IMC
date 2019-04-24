@@ -1,5 +1,6 @@
 package br.com.calculadoraimc
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -11,5 +12,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         txvNome.text = acessoSharedPref!!.getString("nomeUsuario", "")
+
+        btnMudarNome.setOnClickListener {
+            startActivity(Intent(this, Cadastro::class.java))
+        }
     }
 }
