@@ -16,6 +16,14 @@
             app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="58dp" android:textStyle="bold"
             android:textAlignment="center" android:textSize="36sp" android:id="@+id/txvCalculadora"/>
     <TextView
+            android:text="Olá, Fulano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txvNome" android:layout_marginTop="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/txvCalculadora" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:textSize="18sp"/>
+    <TextView
             android:text="Massa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,24 +55,34 @@
             android:text="Calcular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnCalcular" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/sbAltura" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/btnCalcular" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/sbAltura"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp"/>
-    <TextView
-            android:text="Olá Fulano"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/txvNome" android:layout_marginTop="28dp"
-            app:layout_constraintTop_toBottomOf="@+id/txvCalculadora" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" android:textSize="18sp"/>
     <Button
             android:text="Mudar nome padrão"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnMudarNome" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"
             android:layout_marginBottom="24dp" app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:text="Resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/txvResultado" app:layout_constraintEnd_toEndOf="@+id/btnCalcular"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="@+id/btnCalcular"
+            android:layout_marginTop="64dp" app:layout_constraintTop_toBottomOf="@+id/btnCalcular"
+            app:layout_constraintHorizontal_bias="0.498" android:textSize="30sp"/>
+    <TextView
+            android:text="Situação"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txvSituação"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/txvResultado" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:textSize="24sp"/>
 
 </android.support.constraint.ConstraintLayout>
