@@ -3,4 +3,11 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="MuitoAbaixoDoPeso">#000000</color>
+    <color name="AbaixoDoPeso">#0F0351</color>
+    <color name="PesoNormal">#0E9907</color>
+    <color name="AcimaDoPeso">#CBE827</color>
+    <color name="ObesidadeI">#E8B127</color>
+    <color name="ObesidadeII">#FF0000</color>
+    <color name="ObesidadeIII">#5E1616</color>
 </resources>

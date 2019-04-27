@@ -25,35 +25,37 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/sbMassa"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"
             app:layout_constraintStart_toStartOf="@+id/txvMassa"
-            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/txvMassa"/>
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/txvMassa"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
     <TextView
             android:text="Altura"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txvAltura" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/sbMassa"/>
+            android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/txvMostraMassa"/>
     <SeekBar
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/sbAltura" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"
+            android:id="@+id/sbAltura"
             app:layout_constraintStart_toStartOf="@+id/txvAltura"
-            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/txvAltura"/>
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/txvAltura"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
     <Button
             android:text="Calcular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnCalcular" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/sbAltura" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/btnCalcular"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnMudarNome" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/txvSituacao"/>
     <TextView
-            android:text="Olá Fulano"
+            android:text="Olá, Fulano."
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txvNome" android:layout_marginTop="28dp"
@@ -66,5 +68,37 @@
             android:layout_height="wrap_content"
             android:id="@+id/btnMudarNome" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"
             android:layout_marginBottom="24dp" app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:id="@+id/txvMostraAltura"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/sbAltura"
+            app:layout_constraintStart_toStartOf="@+id/txvAltura" android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txvMostraMassa"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/sbMassa" app:layout_constraintStart_toStartOf="@+id/sbMassa"
+            android:layout_marginStart="8dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txvResultado"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:textSize="24sp"
+            android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/txvMostraAltura"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txvSituacao"
+            android:textSize="24sp"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@android:color/tertiary_text_light" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/txvResultado"/>
 
 </android.support.constraint.ConstraintLayout>
